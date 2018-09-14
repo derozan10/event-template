@@ -23,9 +23,9 @@ class Header extends Component {
     window.addEventListener("scroll", this.handleScroll);
   }
 
-  //   componentWillUnmount() {
-  //     window.removeEventListener("scroll");
-  //   }
+  componentWillUnmount() {
+    window.removeEventListener("scroll");
+  }
 
   render() {
     return (
@@ -34,8 +34,7 @@ class Header extends Component {
         style={{
           backgroundColor: this.state.headerTransparent
             ? "transparent"
-            : "#2f2f2f",
-          padding: "10px 0"
+            : "#2f2f2f"
         }}
       >
         <Toolbar>
