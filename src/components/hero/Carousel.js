@@ -9,36 +9,23 @@ const Carousel = () => {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 300,
-    mobileFirst: true
+    speed: 400,
+    mobileFirst: true,
   };
   return (
-    <Slider {...settings}>
-      <div>
-        <div
-          style={{
-            background: `url(${slide_one})`
-          }}
-          className="carrousel_image"
-        />
-      </div>
-      <div>
-        <div
-          style={{
-            background: `url(${slide_two})`
-          }}
-          className="carrousel_image"
-        />
-      </div>
-      <div>
-        <div
-          style={{
-            background: `url(${slide_three})`
-          }}
-          className="carrousel_image"
-        />
-      </div>
-    </Slider>
+    <div className="carousel_container">
+      <Slider {...settings}>
+        <div>
+          <div className="carousel_image" style={{ backgroundImage: `url(${slide_one})` }}></div>
+        </div>
+        <div>
+          <div className="carousel_image" style={{ backgroundImage: `url(${slide_two})` }}></div>
+        </div>
+        <div>
+          <div className="carousel_image" style={{ backgroundImage: `url(${slide_three})` }}></div>
+        </div>
+      </Slider>
+    </div>
   );
 };
 
