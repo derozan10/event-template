@@ -21,7 +21,7 @@ const PlaceTime = () => {
                                     }}
                                 ></div>
                                 <div className="vn_title">Event Datum &amp; Uur</div>
-                                <div className="vn_desc">Dec, 16, 2018 @10.00 pm</div>
+                                <div className="vn_desc">Dec, 16, 2018 @22.00 u</div>
                             </div>
                         </div>
                     </div>
